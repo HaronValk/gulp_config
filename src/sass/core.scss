@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.page {
+	box-sizing: border-box;
+	font-size: 16px;
+	color: $black;
+}
+
+.page__body {
+	font-family: 'Arial', sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.container {
+	@include min-max(320px, 100%, 0);
+}
+.visually-hidden{
+	@include visually-hidden();
+}

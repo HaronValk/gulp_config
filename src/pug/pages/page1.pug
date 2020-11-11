@@ -1,0 +1,8 @@
+extends ../layouts/main-layout.pug
+
+block variables
+    - var title = 'Inner page'
+    - var pageClass = ''
+block content
+    h1 Inner Page
+    p #{jsonData.message}
